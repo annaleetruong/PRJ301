@@ -1,0 +1,124 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; /* White header */
+    padding: 10px;
+}
+
+.user-name h1 {
+    color: #000000; /* Black text */
+    margin: 0;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto; /* Add this line to center the logo */
+    display: block; /* Add this line to center the logo */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left form {
+    margin-right: 10px;
+}
+
+.header-left input[type="text"] {
+    padding: 5px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px; /* Add border radius for a softer look */
+}
+
+.header-left button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius for a softer look */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.header-left button[type="submit"]:hover {
+    background-color: #333333; /* Darken the background on hover */
+}
+
+.header-left a {
+    color: #000000; /* Black text */
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold; /* Make the "Log out" link bold */
+}
+
+ul {
+    list-style-type: none;
+    background-color: #ffffff; /* White background */
+    padding: 0px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center; /* Adjusted to space items evenly */
+    border-bottom: 2px solid #727070; /* Black border */
+}
+
+ul li {
+    margin-right: 50px; /* Increased margin between items */
+}
+
+ul li a {
+    color: #000000; /* Black text */
+    text-decoration: none;
+    font-weight: bold; /* Make the menu items bold */
+    font-size: 20px;
+}
+.pay-success {
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 400px; /* Set the maximum width of the pay-success container */
+    margin: 0 auto;
+    /*align-items: center;*/
+}
+
+.pay-success span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pay-success form {
+    margin-top: 20px;
+}
+
+.pay-success button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button */
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff; /* White text */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius for a softer look */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.pay-success button:hover {
+    background-color: #45a049; /* Darken the background on hover */
+}

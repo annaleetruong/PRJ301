@@ -1,0 +1,271 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #669900;
+    padding: 10px;
+}
+
+.header ul {
+    background-color: #669900;
+}
+
+.header ul li a{
+    color: #FFFFFF;
+}
+
+.user-name h1 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto; /* Add this line to center the logo */
+    display: block; /* Add this line to center the logo */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.header-left form {
+    margin-right: 10px;
+}
+
+.header-left input[type="text"] {
+    padding: 5px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px; /* Add border radius for a softer look */
+}
+
+.header-left button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius for a softer look */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.header-left button[type="submit"]:hover {
+    background-color: #333333; /* Darken the background on hover */
+}
+
+.header-left a {
+    color: #FFFFFF; /* Black text */
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold; /* Make the "Log out" link bold */
+}
+
+.header-left i {
+    padding-left: 2px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #ffffff; /* White background */
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Adjusted to space items evenly */
+}
+
+ul li {
+    margin-right: 50px; /* Increased margin between items */
+}
+
+ul li a {
+    color: #000000; /* Black text */
+    text-decoration: none;
+    font-weight: bold; /* Make the menu items bold */
+    font-size: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0;
+}
+.product-item{
+    border: 1px solid #CCCCCC;
+    transition-duration: 0.5s;
+}
+
+.product-item:hover{
+    transform: scale(1.05);
+}
+
+.product-list {
+    width: 20%; /* Set width to 25% for 4 products in a row */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product-thumb img {
+    width: 100%;
+    height: auto;
+    transition-duration: 0.5s;
+    overflow: hidden;
+}
+
+
+.product-name {
+    color: #000000; /* Black text */
+    text-decoration: none;
+}
+
+.product-price {
+    margin-top: 5px;
+    font-weight: bold;
+    color: red;
+}
+
+.dropdown-wrap {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #000000;
+    padding: 10px 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.dropdown > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.dropdown > label,
+.dropdown > a[role="button"] {
+  display: inline-block;
+  padding: 6px 15px;
+  color: #333;
+  line-height: 1.5em;
+  text-decoration: none;
+  border: 1px solid #8c8c8c;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.dropdown > label:hover,
+.dropdown > a[role="button"]:hover,
+.dropdown > a[role="button"]:focus {
+  border-color: #333;
+}
+
+.dropdown > label:after,
+.dropdown > a[role="button"]:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.dropdown > ul {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  left: -100vw;
+  top: calc(1.5em + 14px);
+  border: 1px solid #8c8c8c;
+  background: #fff;
+  padding: 6px 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+.dropdown > ul a {
+  display: block;
+  padding: 6px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown > ul a:hover,
+.dropdown > ul a:focus {
+  background: #ececec;
+}
+
+.dropdown > input[type="checkbox"]:checked ~ ul,
+.dropdown > ul:target {
+  left: 0;
+}
+
+.dropdown > [type="checkbox"]:checked + label:after,
+.dropdown > ul:target ~ a:after {
+  content: "\f0d8";
+}
+
+.dropdown a.close {
+  display: none;
+}
+
+.dropdown > ul:target ~ a.close {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-indent: -100vw;
+  z-index: 1000;
+}
+
+#my-dropdown2 li a {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#my-dropdown2 li {
+    margin: 0;
+}
+
+#no-product {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 1%;
+}

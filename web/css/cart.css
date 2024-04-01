@@ -1,0 +1,245 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #669900; 
+    padding: 10px;
+}
+
+.user-name h1 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left form {
+    margin-right: 10px;
+}
+
+.header-left input[type="text"] {
+    padding: 5px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px; /* Add border radius for a softer look */
+}
+
+.header-left button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius for a softer look */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.header-left button[type="submit"]:hover {
+    background-color: #333333; /* Darken the background on hover */
+}
+
+.header-left a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold; /* Make the "Log out" link bold */
+}
+
+ul {
+    list-style-type: none;
+    background-color: #669900;
+    padding: 0px;
+    display: flex;
+    justify-content: center; /* Adjusted to space items evenly */
+}
+
+ul li {
+    margin-right: 50px; /* Increased margin between items */
+}
+
+ul li a {
+    color: #FFFFFF; /* Black text */
+    text-decoration: none;
+    font-weight: bold; /* Make the menu items bold */
+    font-size: 20px;
+}
+
+
+
+/*table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000;  Black border 
+}
+
+table th {
+  font-weight: bold;
+}
+
+.products img {
+  width: 80px;
+  height: auto;
+}
+
+span.total {
+  font-weight: bold;
+}
+
+form.pay-form {
+  margin-top: 20px;
+}*/
+h2.cart-title {
+    margin-top: 20px;
+    border-bottom: 1px solid #000000; /* Black border bottom for the title */
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    padding: 8px;
+    border-bottom: 1px solid #000000; /* Black border bottom */
+}
+.img-product{
+    width: 50px;
+    height: 50px;
+}
+.form-phone {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px; /* Add border radius for a softer look */
+}
+
+.form-phone h2 {
+    text-align: center;
+}
+
+.form-phone input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px; /* Add border radius for a softer look */
+}
+
+/*.form-phone button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #000000;  Black button 
+    color: #ffffff;  White text 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;  Add border radius for a softer look 
+    transition: background-color 0.3s ease;  Add transition effect 
+}
+
+.form-phone button[type="submit"]:hover {
+    background-color: #333333;  Darken the background on hover 
+}*/
+
+table button[type="submit"] {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius for a softer look */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+table button[type="submit"][name="action"][value="Remove"] {
+    background-color: #ff0000; /* Red button for Remove */
+    color: #ffffff; /* White text */
+}
+
+table button[type="submit"][name="action"][value="Remove"]:hover {
+    background-color: #cc0000; /* Darken the background on hover */
+}
+
+table button[type="submit"][name="action"][value="Change"] {
+    background-color: #00cc00; /* Green button for Change */
+    color: #ffffff; /* White text */
+}
+
+table button[type="submit"][name="action"][value="Change"]:hover {
+    background-color: #009900; /* Darken the background on hover */
+}
+
+.total-money {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+form:last-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+form:last-child button[type="submit"] {
+    padding: 15px 30px;
+    background-color: #4CAF50; /* Green button */
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+form:last-child button[type="submit"]:hover {
+    background-color: #45a049; /* Darken the background on hover */
+}
+
+.null-cart-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.null-cart {
+    text-align: end;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.null-cart button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button */
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff; /* White text */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius for a softer look */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.null-cart button:hover {
+    background-color: #45a049; /* Darken the background on hover */
+}

@@ -1,0 +1,179 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #669900; 
+    padding: 10px;
+}
+
+.user-name h1 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left form {
+    margin-right: 10px;
+}
+
+.header-left input[type="text"] {
+    padding: 5px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px; /* Add border radius for a softer look */
+}
+
+.header-left button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius for a softer look */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.header-left button[type="submit"]:hover {
+    background-color: #333333; /* Darken the background on hover */
+}
+
+.header-left a {
+    color: #FFFFFF; /* Black text */
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold; /* Make the "Log out" link bold */
+}
+
+ul {
+    list-style-type: none;
+    background-color: #669900; /* White background */
+    align-items: center;
+    display: flex;
+    justify-content: center; /* Adjusted to space items evenly */
+}
+
+ul li {
+    margin-right: 50px; /* Increased margin between items */
+}
+
+ul li a {
+    color: #FFFFFF; 
+    text-decoration: none;
+    font-weight: bold; /* Make the menu items bold */
+    font-size: 20px;
+}
+.products-viewed {
+    margin-right: 20px;
+    display: flex;
+}
+
+.products-viewed img {
+    width: 50%;
+    height: auto;
+}
+
+.product-viewed-left {
+    margin-top: 10%;
+}
+
+.product-viewed-name{
+    font-size: 35px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.product-viewed-price{
+    color: red;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.product-viewed-featrue p{
+    padding-top: 50px;
+    font-size: 20px;
+    color: rgba(151,151,151,1);
+}
+.form{
+    display: flex;
+}
+.title-h3{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #727070;
+}
+
+.input-number {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.input-number input{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.add-button {
+    margin-top: 10px;
+    border: none;
+}
+.add-button button{
+    color: white;
+    background-color: #66CC00;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.add-button button:hover {
+    background-color: #669900;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 50px;
+    background-color: #FFFFFF;
+}
+.product-item{
+    border: 1px solid #000000;
+/*    border-radius: 6px;*/
+}
+.product-list {
+    width: 15%; /* Set width to 25% for 4 products in a row */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.product-name {
+    color: #000000; /* Black text */
+    text-decoration: none;
+}
+
+.product-price {
+    margin-top: 5px;
+    font-weight: bold;
+    color: red;
+}
